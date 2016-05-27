@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Apr 13 2016 13:42:31 GMT+0200 (W. Europe Daylight Time)
+// Generated on Fri May 27 2016 09:48:27 GMT+0200 (W. Europe Daylight Time)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'js/main.js'
+      'js/calculator.js',
+      'js/calculator.spec.js'
     ],
 
 
@@ -50,7 +51,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // start these browsers
