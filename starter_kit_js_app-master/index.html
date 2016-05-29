@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>StarterKitJS calculator</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +37,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Calculator</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,13 +49,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#about">JSON</a>
                     </li>
                 </ul>
             </div>
@@ -71,9 +63,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    <h1>JavaScript calculator</h1>
+                    <div class="row">
+                      <div class="form-group">
+                          <label for="argument1" class="control-label">First argument</label>
+                          <input id="argument1" type="number" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                          <label for="argument2" class="control-label">Second argument</label>
+                          <input id="argument2" type="number" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                          <label for="result" class="control-label">Result</label>
+                          <input id="result" type="number" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                          <button type="button" onclick="calculatorOnWebsite.add()" class="btn btn-default">Add</button>
+                          <button type="button" onclick="calculatorOnWebsite.substract()" class="btn btn-default">Substract</button>
+                          <button type="button" onclick="calculatorOnWebsite.multiply()" class="btn btn-default">Multiply</button>
+                          <button type="button" onclick="calculatorOnWebsite.divide()" class="btn btn-default">Divide</button>
+                          <button type="button" onclick="calculatorOnWebsite.factorial()" class="btn btn-default">Factorial</button>
+                          <button type="button" onclick="showData.gamesData()" class="btn btn-default">Show games</button>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,29 +96,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>JSON</h1>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-lg-12" id="games-data">
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
                 </div>
             </div>
         </div>
@@ -121,6 +114,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/calculatorOnWebsite.js"></script>
+    <script src="js/games.js"></script>
 
 </body>
 
