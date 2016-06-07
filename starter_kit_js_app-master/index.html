@@ -38,7 +38,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Calculator</a>
+                <a class="navbar-brand page-scroll" onclick="hideJson()" href="#page-top">Calculator</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,7 +49,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">JSON</a>
+                        <a class="page-scroll" onclick="showData.gamesData()" href="#about">JSON</a>
                     </li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
                       </div>
                       <div class="form-group">
                           <label for="result" class="control-label">Result</label>
-                          <input id="result" type="number" class="form-control" />
+                          <input id="result" type="number" class="form-control" disabled="true"/>
                       </div>
                       <div class="form-group">
                           <button type="button" onclick="calculatorOnWebsite.add()" class="btn btn-default">Add</button>
@@ -83,7 +83,6 @@
                           <button type="button" onclick="calculatorOnWebsite.multiply()" class="btn btn-default">Multiply</button>
                           <button type="button" onclick="calculatorOnWebsite.divide()" class="btn btn-default">Divide</button>
                           <button type="button" onclick="calculatorOnWebsite.factorial()" class="btn btn-default">Factorial</button>
-                          <button type="button" onclick="showData.gamesData()" class="btn btn-default">Show games</button>
                       </div>
                     </div>
                 </div>
@@ -95,7 +94,7 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="json-div" style="display: none">
                     <h1>JSON</h1>
                 </div>
                 <div class="col-lg-12" id="games-data">
@@ -117,6 +116,7 @@
     <script src="js/calculator.js"></script>
     <script src="js/calculatorOnWebsite.js"></script>
     <script src="js/games.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

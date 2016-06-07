@@ -1,3 +1,4 @@
+[
 {
 
     "title" : "Diablo",
@@ -32,18 +33,5 @@
     "producer" : "Blizzard",
     "release" : 2015,
     "genre" : "MOBA"
-  },
-
-  {
-    "title" : "FIFA 16",
-    "producer" : "EA Sports",
-    "release" : 2015,
-    "genre" : "Sport"
-  },
-
-  {
-    "title" : "Team Fortress 2",
-    "producer" : "Valve",
-    "release" : 2007,
-    "genre" : "FPS"
   }
+]

@@ -21,7 +21,9 @@ var showData = (function() {
         var out = "";
         var i;
         for(i = 0; i < arr.length; i++) {
-            out += '<p>Title: ' + arr[i].title + '</p>' + '<p>Producer: ' + arr[i].producer + '</p>' + '<p>Release date: ' + arr[i].release + '</p>' + '<p>Genre: ' + arr[i].genre + '</p>';
+            out += '<p>Title: ' + arr[i].title + '</p>' + '<p>Producer: ' + arr[i].producer + '</p>' + '<p>Release date: ' + arr[i].release +'</p>' + '<p>Genre: ' + arr[i].genre + '<br><br></p>';
         }
         document.getElementById("games-data").innerHTML = out;
+        document.getElementById("json-div").style.display = "block";
+        document.getElementById("games-data").style.display = "block";
       }
